@@ -106,7 +106,7 @@
       <div class="collapse navbar-collapse navbar-top-collapse">
         <ul class="nav navbar-nav">
           <li class="dropdown" id="contacts">
-            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-<?php echo $moneymaker2_header_contacts_icon ? $moneymaker2_header_contacts_icon : 'mobile'; ?>"></i> <span class="phone"><?php echo $moneymaker2_header_contacts_phone ? $moneymaker2_header_contacts_phone : $telephone; ?></span> <?php if ($moneymaker2_header_contacts||$moneymaker2_modules_callback_enabled) { ?><span class="hidden-sm"><?php echo $moneymaker2_header_contacts_title; ?> </span><i class="fa fa-angle-down"></i><?php } ?></a>
+            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-<?php echo $moneymaker2_header_contacts_icon ? $moneymaker2_header_contacts_icon : 'mobile'; ?>"></i> <span class="phone"><?php // echo $moneymaker2_header_contacts_phone ? $moneymaker2_header_contacts_phone : $telephone; ?>Контакты</span> <?php if ($moneymaker2_header_contacts||$moneymaker2_modules_callback_enabled) { ?><span class="hidden-sm"><?php echo $moneymaker2_header_contacts_title; ?> </span><i class="fa fa-angle-down"></i><?php } ?></a>
             <?php if ($moneymaker2_header_contacts||$moneymaker2_modules_callback_enabled) { ?>
             <ul class="dropdown-menu">
               <?php if ($moneymaker2_modules_callback_enabled) { ?>
