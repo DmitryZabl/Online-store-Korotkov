@@ -308,6 +308,7 @@
             <?php } ?>
             <?php if ($review_status) { ?>
             <li><a href="#tab-review" data-toggle="tab"><i class="fa fa-fw fa-comments-o"></i>  <?php echo $tab_review; ?></a></li>
+            <!-- <li><a href="#tab-review" data-toggle="tab"><i class="fa fa-fw fa-comments-o"></i>  h1</a></li> -->
             <?php } ?>
             <?php if ($moneymaker2_product_tabs) { ?>
             <?php foreach ($moneymaker2_product_tabs as $key => $value) { ?>
