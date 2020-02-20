@@ -130,10 +130,10 @@
                 <hr>
                 <?php } ?>
                 <?php if ($price) { ?>
-                  <?php if ($tax) { ?>
-                  <div class="text-left"><small><?php echo $text_tax; ?> <span class="text-muted"><?php echo $tax; ?></span></small></div>
+                  <!-- <//?php if ($tax) { ?>
+                  <div class="text-left"><small><//?php echo $text_tax; ?> <span class="text-muted"><//?php echo $tax; ?></span></small></div>
                   <hr>
-                  <?php } ?>
+                  <//?php } ?> -->
                   <?php if ($points) { ?>
                   <div class="text-left"><small><?php echo $text_points; ?> <span class="text-muted"><?php echo $points; ?></span></small></div>
                   <hr>

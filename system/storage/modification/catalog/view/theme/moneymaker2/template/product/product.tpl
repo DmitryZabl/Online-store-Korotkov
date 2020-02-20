@@ -130,10 +130,10 @@
                 <hr>
                 <?php } ?>
                 <?php if ($price) { ?>
-                  <?php if ($tax) { ?>
-                  <div class="text-left"><small><?php echo $text_tax; ?> <span class="text-muted"><?php echo $tax; ?></span></small></div>
+                  <!-- <//?php if ($tax) { ?>
+                  <div class="text-left"><small><//?php echo $text_tax; ?> <span class="text-muted"><//?php echo $tax; ?></span></small></div>
                   <hr>
-                  <?php } ?>
+                  <//?php } ?> -->
                   <?php if ($points) { ?>
                   <div class="text-left"><small><?php echo $text_points; ?> <span class="text-muted"><?php echo $points; ?></span></small></div>
                   <hr>
@@ -308,6 +308,7 @@
             <?php } ?>
             <?php if ($review_status) { ?>
             <li><a href="#tab-review" data-toggle="tab"><i class="fa fa-fw fa-comments-o"></i>  <?php echo $tab_review; ?></a></li>
+            <!-- <li><a href="#tab-review" data-toggle="tab"><i class="fa fa-fw fa-comments-o"></i>  h1</a></li> -->
             <?php } ?>
             <?php if ($moneymaker2_product_tabs) { ?>
             <?php foreach ($moneymaker2_product_tabs as $key => $value) { ?>

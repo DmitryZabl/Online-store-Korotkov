@@ -1248,6 +1248,7 @@ a.list-group-item:focus, a.list-group-item:hover, button.list-group-item:focus, 
 	-moz-box-shadow: none !important;
 	-o-box-shadow: none !important;
 	box-shadow: none !important;
+
 }
 
 .filter-native {

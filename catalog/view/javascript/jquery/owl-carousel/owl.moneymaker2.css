@@ -160,6 +160,7 @@ body.owl-moneymaker2-fullscreen-bottom footer {
 }
 .owl-moneymaker2 .item-text.light {
     color: #fff;
+    text-shadow: 1px 1px 3px black;
 }
 .owl-moneymaker2 .item-text.dark {
     color: #111;
