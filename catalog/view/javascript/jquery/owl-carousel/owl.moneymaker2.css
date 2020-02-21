@@ -164,6 +164,7 @@ body.owl-moneymaker2-fullscreen-bottom footer {
 }
 .owl-moneymaker2 .item-text.dark {
     color: #111;
+    text-shadow: 1px 1px 3px white
 }
 
 .owl-moneymaker2 .item-text.top-center, .owl-moneymaker2 .item-text.middle-center, .owl-moneymaker2 .item-text.bottom-center {
