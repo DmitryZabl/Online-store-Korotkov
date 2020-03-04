@@ -28,3 +28,4 @@ error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol in W:\domain
 error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol in W:\domains\korotkov-balzam.ru\system\library\mail.php on line 167
 2020-02-27 19:51:59 - PHP Warning:  fsockopen(): Failed to enable crypto in W:\domains\korotkov-balzam.ru\system\library\mail.php on line 167
 2020-02-27 19:51:59 - PHP Warning:  fsockopen(): unable to connect to ssl://smtp.yandex.ru:587 (Unknown error) in W:\domains\korotkov-balzam.ru\system\library\mail.php on line 167
+2020-03-04 20:03:09 - PHP Warning:  A non-numeric value encountered in W:\domains\korotkov-balzam.ru\system\storage\modification\admin\controller\sale\order.php on line 1998

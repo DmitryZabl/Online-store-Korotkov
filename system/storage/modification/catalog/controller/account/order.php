@@ -102,6 +102,13 @@ class ControllerAccountOrder extends Controller {
 		$data['content_top'] = $this->load->controller('common/content_top');
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
+		if (($this->config->get('gixocaccount_status')) && ($this->config->get('gixocaccount_back'))) {
+			$data['status_back'] = true;
+			$data['button_back'] = $this->language->get('button_back');
+			$data['back'] = $this->url->link('account/account', '', true);
+		} else {
+			$data['status_back'] = false;
+		}
 		$data['header'] = $this->load->controller('common/header');
 
 		$this->response->setOutput($this->load->view('account/order_list', $data));
@@ -387,6 +394,13 @@ class ControllerAccountOrder extends Controller {
 			$data['content_top'] = $this->load->controller('common/content_top');
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
+		if (($this->config->get('gixocaccount_status')) && ($this->config->get('gixocaccount_back'))) {
+			$data['status_back'] = true;
+			$data['button_back'] = $this->language->get('button_back');
+			$data['back'] = $this->url->link('account/account', '', true);
+		} else {
+			$data['status_back'] = false;
+		}
 			$data['header'] = $this->load->controller('common/header');
 
 			$this->response->setOutput($this->load->view('account/order_info', $data));
@@ -428,6 +442,13 @@ class ControllerAccountOrder extends Controller {
 			$data['content_top'] = $this->load->controller('common/content_top');
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
+		if (($this->config->get('gixocaccount_status')) && ($this->config->get('gixocaccount_back'))) {
+			$data['status_back'] = true;
+			$data['button_back'] = $this->language->get('button_back');
+			$data['back'] = $this->url->link('account/account', '', true);
+		} else {
+			$data['status_back'] = false;
+		}
 			$data['header'] = $this->load->controller('common/header');
 
 			$this->response->setOutput($this->load->view('error/not_found', $data));
