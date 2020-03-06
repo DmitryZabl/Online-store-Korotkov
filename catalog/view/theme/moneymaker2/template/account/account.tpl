@@ -32,6 +32,9 @@
         <li><a href="<?php echo $password; ?>"><?php echo $text_password; ?></a></li>
         <li><a href="<?php echo $address; ?>"><?php echo $text_address; ?></a></li>
         <li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
+        <li>
+        <?php if (!$is_logged) echo "зарегестрирован"; ?>
+        </li>
       </ul>
       <?php if ($credit_cards) { ?>
       <h3 class="text-center"><?php echo $text_credit_card; ?></h3>

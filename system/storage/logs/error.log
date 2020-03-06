@@ -29,3 +29,13 @@ error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol in W:\domain
 2020-02-27 19:51:59 - PHP Warning:  fsockopen(): Failed to enable crypto in W:\domains\korotkov-balzam.ru\system\library\mail.php on line 167
 2020-02-27 19:51:59 - PHP Warning:  fsockopen(): unable to connect to ssl://smtp.yandex.ru:587 (Unknown error) in W:\domains\korotkov-balzam.ru\system\library\mail.php on line 167
 2020-03-04 20:03:09 - PHP Warning:  A non-numeric value encountered in W:\domains\korotkov-balzam.ru\system\storage\modification\admin\controller\sale\order.php on line 1998
+2020-03-06 16:03:44 - PHP Notice:  Undefined variable: status_back in W:\domains\korotkov-balzam.ru\system\storage\modification\catalog\view\theme\moneymaker2\template\account\simpleedit.tpl on line 47
+2020-03-06 16:04:04 - PHP Notice:  Undefined variable: status_back in W:\domains\korotkov-balzam.ru\system\storage\modification\catalog\view\theme\moneymaker2\template\account\simpleedit.tpl on line 47
+2020-03-06 16:04:51 - PHP Notice:  Undefined variable: status_back in W:\domains\korotkov-balzam.ru\system\storage\modification\catalog\view\theme\moneymaker2\template\account\simpleedit.tpl on line 47
+2020-03-06 16:29:38 - PHP Notice:  Undefined property: Template\PHP::$customer in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\account\account.tpl on line 36
+2020-03-06 16:34:35 - PHP Notice:  Undefined variable: logged in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\account\account.tpl on line 36
+2020-03-06 16:35:33 - PHP Notice:  Undefined property: Template\PHP::$customer in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\account\account.tpl on line 36
+2020-03-06 20:23:33 - PHP Notice:  Undefined variable: moneymaker2_modules_callback_header in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\information\contact.tpl on line 98
+2020-03-06 20:28:39 - PHP Notice:  Undefined variable: moneymaker2_modules_callback_header in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\information\contact.tpl on line 98
+2020-03-06 20:36:05 - PHP Notice:  Undefined variable: moneymaker2_modules_callback_header in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\information\contact.tpl on line 98
+2020-03-06 20:37:27 - PHP Notice:  Undefined variable: moneymaker2_modules_callback_header in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\information\contact.tpl on line 98
