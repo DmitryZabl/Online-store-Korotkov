@@ -22,7 +22,7 @@ define('DIR_UPLOAD', 'W:/domains/korotkov-balzam.ru/system/storage/upload/');
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'admin1');
-define('DB_PASSWORD', 'admin2');
+define('DB_PASSWORD', 'q1w2e3');
 define('DB_DATABASE', 'korotkov-balzam');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
