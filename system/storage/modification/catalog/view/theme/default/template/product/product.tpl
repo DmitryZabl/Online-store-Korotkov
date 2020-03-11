@@ -43,6 +43,16 @@
             <?php } ?>
           </ul>
           <div class="tab-content">
+
+                    <?php // AP TABS 
+                        if ($ap_tabs) { $i = 0; 
+                            foreach ($ap_tabs as $tab) { 
+                                echo "<div class=\"tab-pane\" id=\"ap-tab{$i}\">". html_entity_decode($tab['content'], ENT_QUOTES, 'UTF-8') ."</div>";
+                                $i++; 
+                            }
+                        } 
+                    ?>
+                
             <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
             <?php if ($attribute_groups) { ?>
             <div class="tab-pane" id="tab-specification">

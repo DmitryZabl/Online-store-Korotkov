@@ -536,6 +536,55 @@ class ModelCatalogProduct extends Model {
 		return $query->rows;
 	}
 
+
+                    /* Tabs by Artem Pitov */
+                    public function getApTabs($product_id) 
+                    {
+                        $tabs_data  = [];
+                        $cross_data = [];
+
+                        $product_tabs = $this->db->query("
+                            SELECT tab_id, name, content, sort_order, language_id 
+                                FROM `". DB_PREFIX ."product_ap_tabs`
+                                WHERE product_id = '". (int) $product_id ."'
+                                    AND language_id = '". (int) $this->config->get('config_language_id') ."'
+                                ORDER BY sort_order 
+                        ");
+
+                        if ($product_tabs->num_rows) {
+                            foreach ($product_tabs->rows as $tab) {
+                                $tabs_data[] = 
+                                [
+                                    'name'        => html_entity_decode($tab['name'], ENT_COMPAT, 'UTF-8'),
+                                    'content'     => html_entity_decode($tab['content'], ENT_COMPAT, 'UTF-8'),
+                                    'sort_order'  => $tab['sort_order']
+                                ];
+                            }
+                        }
+
+                        $cross_tabs = $this->db->query(" 
+                            SELECT tab_id, name, content, sort_order, language_id 
+                                FROM `". DB_PREFIX ."product_ap_tabs_cross`
+                                    WHERE language_id = '". (int) $this->config->get('config_language_id') ."'
+                                ORDER BY sort_order 
+                        ");
+
+                        if ($cross_tabs->num_rows) {
+                            foreach ($cross_tabs->rows as $tab) {
+                                $cross_data[] = 
+                                [
+                                    'cross'       => 1,
+                                    'name'        => html_entity_decode($tab['name'], ENT_COMPAT, 'UTF-8'),
+                                    'content'     => html_entity_decode($tab['content'], ENT_COMPAT, 'UTF-8'),
+                                    'sort_order'  => $tab['sort_order']
+                                ];
+                            }
+                        }
+
+                        return array_merge($tabs_data, $cross_data);
+                    }
+                    /* Tabs by Artem Pitov */
+                
 	public function getTotalProductSpecials() {
 		$query = $this->db->query("SELECT COUNT(DISTINCT ps.product_id) AS total FROM " . DB_PREFIX . "product_special ps LEFT JOIN " . DB_PREFIX . "product p ON (ps.product_id = p.product_id) LEFT JOIN " . DB_PREFIX . "product_to_store p2s ON (p.product_id = p2s.product_id) WHERE p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '" . (int)$this->config->get('config_store_id') . "' AND ps.customer_group_id = '" . (int)$this->config->get('config_customer_group_id') . "' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW()))");
 

@@ -307,7 +307,18 @@
             <li<?php if (!$description) { ?> class="active"<?php } ?>><a href="#tab-specification" data-toggle="tab"><i class="fa fa-fw fa-area-chart"></i>  <?php echo $tab_attribute; ?></a></li>
             <?php } ?>
             <?php if ($review_status) { ?>
-            <li><a href="#tab-review" data-toggle="tab"><i class="fa fa-fw fa-comments-o"></i>  <?php echo $tab_review; ?></a></li>
+            
+                    <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
+                    <?php } ?>
+
+                    <?php // AP TABS 
+                        if ($ap_tabs) { $i = 0; 
+                            foreach ($ap_tabs as $tab) { 
+                                echo "<li><a href='#ap-tab{$i}' data-toggle='tab'>". html_entity_decode($tab['name'], ENT_QUOTES, 'UTF-8') ."</a></li>";
+                                $i++; 
+                            } 
+                    ?>
+                
             <!-- <li><a href="#tab-review" data-toggle="tab"><i class="fa fa-fw fa-comments-o"></i>  h1</a></li> -->
             <?php } ?>
             <?php if ($moneymaker2_product_tabs) { ?>
@@ -320,6 +331,16 @@
           </ul>
           <?php } ?>
           <div class="tab-content">
+
+                    <?php // AP TABS 
+                        if ($ap_tabs) { $i = 0; 
+                            foreach ($ap_tabs as $tab) { 
+                                echo "<div class=\"tab-pane\" id=\"ap-tab{$i}\">". html_entity_decode($tab['content'], ENT_QUOTES, 'UTF-8') ."</div>";
+                                $i++; 
+                            }
+                        } 
+                    ?>
+                
             <?php if ($description) { ?>
             <div class="tab-pane fade in active" id="tab-description">
               <?php if ($moneymaker2_product_tabs_headers) { ?>

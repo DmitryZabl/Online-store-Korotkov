@@ -260,7 +260,7 @@
               <li><a href="<?php echo $login; ?>" rel="nofollow"><i class="fa fa-fw fa-sign-in"></i> <?php echo $text_login; ?> / <?php echo $text_register; ?></a></li>
               <?php } else { ?>
               <li class="dropdown-header"><?php echo $moneymaker2_text_customer_name; ?></li>
-              <li><a href="<?php echo $account; ?>" rel="nofollow"><i class="fa fa-fw fa-user"></i> <?php echo $text_account; ?></a></li>
+              <li><a href="<?php echo $order; ?>" rel="nofollow"><i class="fa fa-fw fa-user"></i> <?php echo $text_account; ?></a></li>
               <?php } ?>
               <?php if (!$moneymaker2_common_wishlist_hide) { ?>
               <li><a href="<?php echo $wishlist; ?>" rel="nofollow"><i class="fa fa-fw fa-heart"></i> <span id="wishlist-total"><span><?php echo $text_wishlist; ?></span></span></a></li>

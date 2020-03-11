@@ -5,7 +5,7 @@ $_['heading_title']      = 'Личный кабинет';
 // Text
 $_['text_account']       = 'Личный кабинет';
 $_['text_my_account']    = 'Моя учетная запись';
-$_['text_my_orders']     = 'Мои заказыcsa';
+$_['text_my_orders']     = 'Мои заказы';
 $_['text_my_newsletter'] = 'Подписка';
 $_['text_edit']          = 'Основные данные';
 $_['text_password']      = 'Изменить свой пароль';

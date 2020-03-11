@@ -343,6 +343,10 @@ class ControllerProductProduct extends Controller {
 
 			$discounts = $this->model_catalog_product->getProductDiscounts($this->request->get['product_id']);
 
+                    // AP TABS
+                    $data['ap_tabs'] = $this->model_catalog_product->getApTabs($this->request->get['product_id']);
+                
+
 			$data['discounts'] = array();
 
 			foreach ($discounts as $discount) {
