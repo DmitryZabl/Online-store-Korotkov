@@ -48,7 +48,7 @@
       <?php if ($moneymaker2_footer_contacts_enabled) { ?>
         <?php if ($moneymaker2_footer_contacts) { ?>
           <div class="col-sm-6 col-md-3">
-            <div class="h5 text-muted"><i class="fa fa-fw fa-<?php echo $moneymaker2_footer_contacts_icon; ?>"></i> <?php echo $moneymaker2_footer_contacts_title; ?></div>
+            <div class="h5 text-muted"><a href="http://korotkov-balzam.ru/index.php?route=information/contact"><i class="fa fa-fw fa-<?php echo $moneymaker2_footer_contacts_icon; ?>"></i> <?php echo $moneymaker2_footer_contacts_title; ?></a></div>
             <ul class="list-unstyled">
               <?php foreach ($moneymaker2_footer_contacts as $key => $value) { ?>
                 <?php if ($value['link']||$value['multilink']) { ?>

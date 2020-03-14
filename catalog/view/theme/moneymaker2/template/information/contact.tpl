@@ -28,6 +28,7 @@
       <div class="row catalog-sub">
         <div class="col-sm-12">
           <div class="text-center">
+          <button type="button" class="btn btn-sm btn-link" data-toggle="modal" data-target="#orderModal" data-order-mode="callback" data-order-title=""><i class="fa fa-lg fa-fw fa-volume-control-phone"></i> Нажмите и мы позвоним Вам!</button>
             <a class="btn btn-sm btn-link" href="tel:<?php echo preg_replace('/[^\d+]/', '', $telephone); ?>"><?php echo $moneymaker2_catalog_contacts_call_title; ?></a>
             <a class="btn btn-sm btn-link" href="mailto:<?php echo $config_email; ?>"><?php echo $moneymaker2_catalog_contacts_mail_title; ?></a>
             <?php if ($geocode) { ?><a class="btn btn-sm btn-link" href="https://maps.google.com/maps?q=<?php echo urlencode($geocode); ?>&hl=<?php echo $geocode_hl; ?>&t=m&z=15" target="_blank" rel="noopener"><?php echo $button_map; ?></a><?php } ?>
@@ -58,9 +59,7 @@
                   <address>
                   <?php echo $location['address']; ?>
                   </address>
-                  <?php if ($location['geocode']) { ?>
-                  <a href="https://maps.google.com/maps?q=<?php echo urlencode($location['geocode']); ?>&hl=<?php echo $geocode_hl; ?>&t=m&z=15" target="_blank" rel="noopener" class="btn btn-info"><i class="fa fa-map-marker"></i> <?php echo $button_map; ?></a>
-                  <?php } ?>
+                 
                 </div>
                 <div class="col-sm-3"> <strong><?php echo $text_telephone; ?></strong><br>
                   <?php echo $location['telephone']; ?><br />
