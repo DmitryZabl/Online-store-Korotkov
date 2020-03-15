@@ -43,3 +43,5 @@ error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol in W:\domain
 2020-03-14 16:16:08 - PHP Notice:  Undefined variable: moneymaker2_modules_callback_image in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\information\contact.tpl on line 31
 2020-03-14 16:16:08 - PHP Notice:  Undefined variable: moneymaker2_modules_callback_header in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\information\contact.tpl on line 31
 2020-03-14 16:16:08 - PHP Notice:  Undefined variable: moneymaker2_modules_callback_caption in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\information\contact.tpl on line 31
+2020-03-15 16:16:09 - PHP Notice:  Undefined variable: register in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\extension\module\recommendation.tpl on line 5
+2020-03-15 16:16:09 - PHP Notice:  Undefined variable: text_register in W:\domains\korotkov-balzam.ru\catalog\view\theme\moneymaker2\template\extension\module\recommendation.tpl on line 5

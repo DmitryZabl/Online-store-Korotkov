@@ -44,17 +44,6 @@ class ControllerInformationInformation extends Controller {
 
 			$data['button_continue'] = $this->language->get('button_continue');
 
-		/*mmr*/
-		$data['moneymaker2_common_informations_icons_enabled'] = $this->config->get('moneymaker2_common_informations_icons_enabled');
-		$data['moneymaker2_common_informations_icons'] = $this->config->get('moneymaker2_common_informations_icons');
-		if ($data['moneymaker2_common_informations_icons_enabled']&&isset($data['moneymaker2_common_informations_icons'][$information_id])&&$data['moneymaker2_common_informations_icons'][$information_id]!='-') {
-			$data['information_icon'] = $data['moneymaker2_common_informations_icons'][$information_id];
-		} else {
-			$data['information_icon'] = false;
-		}
-		/*mmr*/
-		
-
 			$data['description'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
 
 			$data['continue'] = $this->url->link('common/home');
@@ -65,9 +54,7 @@ class ControllerInformationInformation extends Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
-			if ($information_id < 7)	{		
-				$data['column_left'] = false;
-			}		// убираем энциклопедию со страниц созданных до рекомендаций
+
 			$this->response->setOutput($this->load->view('information/information', $data));
 		} else {
 			$data['breadcrumbs'][] = array(
@@ -82,17 +69,6 @@ class ControllerInformationInformation extends Controller {
 			$data['text_error'] = $this->language->get('text_error');
 
 			$data['button_continue'] = $this->language->get('button_continue');
-
-		/*mmr*/
-		$data['moneymaker2_common_informations_icons_enabled'] = $this->config->get('moneymaker2_common_informations_icons_enabled');
-		$data['moneymaker2_common_informations_icons'] = $this->config->get('moneymaker2_common_informations_icons');
-		if ($data['moneymaker2_common_informations_icons_enabled']&&isset($data['moneymaker2_common_informations_icons'][$information_id])&&$data['moneymaker2_common_informations_icons'][$information_id]!='-') {
-			$data['information_icon'] = $data['moneymaker2_common_informations_icons'][$information_id];
-		} else {
-			$data['information_icon'] = false;
-		}
-		/*mmr*/
-		
 
 			$data['continue'] = $this->url->link('common/home');
 

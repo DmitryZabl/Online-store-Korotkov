@@ -54,7 +54,9 @@ class ControllerInformationInformation extends Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
-
+			if ($information_id < 7)	{		
+				$data['column_left'] = false;
+			}		// убираем энциклопедию со страниц созданных до рекомендаций
 			$this->response->setOutput($this->load->view('information/information', $data));
 		} else {
 			$data['breadcrumbs'][] = array(
