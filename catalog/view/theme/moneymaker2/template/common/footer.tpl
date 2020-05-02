@@ -790,4 +790,5 @@
 
 
 //--></script>
+<script src="catalog/view/javascript/myScript.js"></script>
 </body></html>

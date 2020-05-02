@@ -57,12 +57,14 @@
 <?php foreach ($analytics as $analytic) { ?>
 <?php echo $analytic; ?>
 <?php } ?>
+<link rel="stylesheet" href="catalog/view/theme/moneymaker2/stylesheet/myStyleSheets.css">
+
 </head>
-<body class="<?php echo $class; ?>">
+<body class="<?php echo $class; ?> min-heigher">
 <header>
   <nav id="top" class="navbar navbar-default navbar-full<?php if ($moneymaker2_header_strip_fixed) { ?> navbar-fixed-top<?php } ?>">
-    <div class="container">
-      <div class="navbar-header">
+    <div class="container container--centrier" id="navCentreir">
+      <div class="navbar-header" id="navbar-logo">
         <?php if (!$moneymaker2_header_strip_expanded) { ?>
         <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-top-collapse, .navbar-menu-collapse"><i class="fa fa-fw fa-bars"></i></a>
         <?php if ($moneymaker2_header_strip_toggle_language&&$language) { ?>
@@ -102,7 +104,7 @@
         </div>
       </div>
       <div class="hidden-xs"></div>
-      <div class="collapse navbar-collapse navbar-top-collapse">
+      <div class="collapse navbar-collapse navbar-top-collapse container--centrier">
         <ul class="nav navbar-nav">
           <li class="dropdown" id="contacts">
             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-<?php echo $moneymaker2_header_contacts_icon ? $moneymaker2_header_contacts_icon : 'mobile'; ?>"></i> <span class="phone"><?php // echo $moneymaker2_header_contacts_phone ? $moneymaker2_header_contacts_phone : $telephone; ?>Контакты</span> <?php if ($moneymaker2_header_contacts||$moneymaker2_modules_callback_enabled) { ?><span class="hidden-sm"><?php echo $moneymaker2_header_contacts_title; ?> </span><i class="fa fa-angle-down"></i><?php } ?></a>
@@ -225,7 +227,7 @@
           </div>
         </div>
         <?php } ?>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" id='nav-right'>
           <?php if (!$moneymaker2_common_buy_hide) { ?>
           <?php echo $cart; ?>
           <?php } ?>
@@ -238,7 +240,7 @@
           <?php if ($moneymaker2_header_strip_currency>1) { ?>
           <?php echo $currency; ?>
           <?php } ?>
-          <li class="dropdown" id="top-links">
+          <li class="dropdown open" id="top-links">
             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-bars"></i> <span class="<?php echo $moneymaker2_header_strip_menu_class; ?>"><?php echo $text_menu; ?> <i class="fa fa-angle-down"></i></span></a>
             <ul class="dropdown-menu keep-open">
               <?php if ($moneymaker2_header_menu_links_enabled&&$moneymaker2_header_links) { ?>

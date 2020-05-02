@@ -181,7 +181,7 @@ html {
 #logo {
 	display: inline-block;
 	line-height: 55px;
-	margin: 0 4px;
+	margin: 10px 4px;
 }
 #logo .fa-stack {
 	margin-top: -3px;
@@ -282,11 +282,11 @@ header > .categories-menu.navbar-default {
 	line-height: 23px;
 	padding-left: 7px;
 	padding-right: 7px;
-	-webkit-transition: .3s;
-	-moz-transition: .3s;
-	-ms-transition: .3s;
-	-o-transition: .3s;
-	transition: .3s;
+	-webkit-transition: .1s;
+	-moz-transition: .1s;
+	-ms-transition: .1s;
+	-o-transition: .1s;
+	transition: .1s;
 }
 .navbar-nav.navbar-right>li>a {
 	padding-left: 10px;
